@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+        rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            $('#txtDate').datepicker({
+                dateFormat: "dd/MM/yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+<style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        #txtDate
+        {
+            background-image: url(http://i988.photobucket.com/albums/af3/mudassarkhan/calender.png);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+        }
+
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+
+}
+.newspaper {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 100px;
+    -webkit-column-rule-style: solid;
+}
+div {
+    background-color: white;
+    width: 750px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 25px;
+}
+ form label{
+display: inline-block;
+width: 120px;
+font-weight: bold;
+}
+</style>
+</head>
+<h1>EDIT NURSE</h1>
+<div class="newspaper">
+<form> <!-- Set a destination for the submission file -->
+  <label for="Firstname">FIRST NAME:</label> <input type="text" name="Firstname" value="DEB...">
+  <br><br>
+  <label for="Lasttname">LAST NAME:</label>  <input type="text" name="Lastname" value="BRAUD">
+  <br><br>
+  <label for="Username">USER NAME:</label>  <input type="text" name="Username" value="DBRAUD">
+  <br><br>
+  <label for="role">    ROLE:</label> <select>
+  <option value="nurse">NURSE</option>
+  <option value="user">USER</option>
+  <option value="patient">PATIENT</option>
+</select>
+  <br><br>
+ <label for="salary">SALARY:</label> <input type="text" name="salary" value="25.00/HR">
+  <br><br>
+  <label for="address">ADDRESS: </label> <input type="text" name="address" value="1234 NORTH STREET">
+  <br><br>
+<label for="city">CITY:</label> <input type="text" name="city" value="BATON ROUGE">
+  <br><br><br>
+  <label for="state">STATE:</label> <input type="text" name="state" value="LOUISIANA">
+  <br><br>
+<label for="zip">ZIP:</label>   <input type="text" name="zip" value="70808">
+  <br><br>
+  <label for="phone#">PHONE NUMBER:</label>   <input type="text" name="phone#" value="225-555-0000">
+  <br><br>
+<label for="email">EMAIL ADDRESS:</label>   <input type="text" name="email" value="BRAUD@mail.com">
+  <br><br>
+  <label for="ssn">SSN:</label>   <input type="text" name="ssn" value="012-34-5678">
+  <br><br>
+<label for="start date">START DATE:</label>   
+<div>
+        <input id="txtDate" type="text" name="name" />
+    </div>
+  <br><br>
+  <label for="yrsworked">YEARS WORKED:</label> <input type="text" name="yrsworked" value="11">
+  <br><br>
+<button class="button save" name="save" type="submit">Save Changes</button>
+</form> 
+<body>
+
+
+
+
+</body>
+</html>
