@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+        rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            $('#txtDate').datepicker({
+                dateFormat: "dd/MM/yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+    
+<style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        #txtDate
+        {
+            background-image: url(http://i988.photobucket.com/albums/af3/mudassarkhan/calender.png);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+
+}
+
+div {
+    background-color: white;
+    width: 750px;
+    padding: 25px;
+    border: 0px solid black;
+    margin: 25px;
+}
+.newspaper {
+    -webkit-column-count: 2;
+    -webkit-column-gap:100px;
+    -webkit-column-rule-style: solid;
+}
+</style>
+<center>
+<h1 style="color:black;">Referral Form</h1>
+</center>
+<div class="newspaper">
+<form> <!-- Set a destination for the submission file -->
+  Date:<br>
+  <input type="text" name="Date">
+  <br>
+<br>
+  MD Office Contact Name<br>
+  <input type="text" name="MD Office Contact Name">
+  <br>
+<br>
+  Phone Number:<br>
+  <input type="text" name="Phone Number">
+  <br><br>
+  Fax Number:<br>
+  <input type="text" name="Fax Number">
+  <br><br>
+<input type="checkbox" name="Patient Competent to Sign Consent" value="Patient Competent to Sign Consent">Patient Competent to Sign Consent<br><br>
+  Next of Kin:<br>
+  <input type="text" name="Next of Kin">
+  <br><br>
+Phone Number:<br>
+  <input type="text" name="Phone Number">
+  <br><br>
+Relation to Patient:<br>
+  <input type="text" name="Relation to Patient">
+  <br><br>
+Hospice Diagnosis:<br>
+  <input type="text" name="Hospice Diagnosis">
+  <br><br>
+Attending Physician:<br>
+  <input type="text" name="Attending Physician">
+  <br><br>
+Phone Number:<br>
+  <input type="text" name="Phone Number">
+  <br><br>
+Patient Name:<br>
+  <input type="text" name="Patient Name">
+  <br><br>
+  Date Of Birth:<br>
+  <div>
+        <input id="txtDate" type="text" name="DoB" />
+    </div>
+  <br><br>
+Social Security Number:<br>
+  <input type="text" name="Social Security Number">
+  <br><br>
+<input type="checkbox" name="Patient Does Not Speak English" value="Patient Does Not Speak English">Patient Does Not Speak English Consent<br><br>
+Name of Translator (if Needed):<br>
+  <input type="text" name="Name of Translator">
+  <br><br>
+Number of Translator<br>
+  <input type="text" name="Number of Translator">
+  <br><br>
+<input type="submit" value="Submit">
+</form>
+<p>If you click the "Submit" button, the form-data will be sent to a different page on the site.</p>
+
+</head>
+</body>
+</html>
