@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+        rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            $('#txtDate').datepicker({
+                dateFormat: "dd/MM/yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+    
+<style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        #txtDate
+        {
+            background-image: url(http://i988.photobucket.com/albums/af3/mudassarkhan/calender.png);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+
+}
+
+div {
+    background-color: white;
+    width: 750px;
+    padding: 25px;
+    border: 0px solid black;
+    margin: 25px;
+}
+.newspaper {
+    -webkit-column-count: 2;
+    -webkit-column-gap:100px;
+    -webkit-column-rule-style: solid;
+}
+</style>
+<center>
+<h1 style="color:black;">Discharge Form</h1>
+</center>
+<div class="newspaper">
+<form> <!-- Set a destination for the submission file -->
+  Patient First Name:<br>
+  <input type="text" name="patientfirstname">
+  <br>
+<br>
+  Patient Last Name:<br>
+  <input type="text" name="patientlastname">
+  <br>
+<br>
+  Patient Middle Name:<br>
+  <input type="text" name="patientmiddlename">
+  <br><br>
+  Patient Sex:<br>
+  <input type="text" name="patientsex">
+  <br><br>
+  National Provider Identifier:<br>
+  <input type="text" name="National Provider Identifier">
+  <br><br>
+  CMS Certification Number:<br>
+  <input type="text" name="CMS Certification Number">
+  <br><br>
+Admission Date:<br>
+  <input type="text" name="Admission Date">
+  <br><br>
+Discharge Date:<br>
+  <input type="text" name="Dischare Date">
+  <br><br>
+Medicare Number:<br>
+  <input type="text" name="Medicare Number">
+  <br><br>
+Medicaid Number:<br>
+  <input type="text" name="Medicaid Number">
+  <br><br>
+Gender:<br>
+  <input type="text" name="Gender">
+  <br><br>
+Reason for Discharge:<br>
+  <input type="text" name="Reason for Discharge">
+  <br><br>
+  Date Of Birth:<br>
+  <div>
+        <input id="txtDate" type="text" name="DoB" />
+    </div>
+  <br><br>
+<input type="submit" value="Submit">
+</form>
+Social Security Number:<br>
+  <input type="text" name="Social Security Number">
+  <br><br>
+<p>If you click the "Submit" button, the form-data will be sent to a different page on the site.</p>
+
+</head>
+</body>
+</html>
