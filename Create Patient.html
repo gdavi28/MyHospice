@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+        rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            $('#txtDate').datepicker({
+                dateFormat: "dd/MM/yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+<style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        #txtDate
+        {
+            background-image: url(http://i988.photobucket.com/albums/af3/mudassarkhan/calender.png);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+        }
+
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+
+}
+.newspaper {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 100px;
+    -webkit-column-rule-style: solid;
+}
+div {
+    background-color: white;
+    width: 750px;
+    padding: 25px;
+    border: 0px solid black;
+    margin: 25px;
+}
+ form label{
+display: inline-block;
+width: 150px;
+font-weight: bold;
+}
+</style>
+</head>
+<h1>CREATE PATIENT</h1>
+<div class="newspaper">
+<form> <!-- Set a destination for the submission file -->
+  <label for="Firstname">FIRST NAME:</label> <input type="text" name="Firstname" value="">
+  <br><br>
+  <label for="Middlename">MIDDLE NAME:</label>  <input type="text" name="Middlename" value="">
+  <br><br>
+  <label for="Lasttname">LAST NAME:</label>  <input type="text" name="Lastname" value="">
+  <br><br>
+ <label for="contactname">CONTACT NAME:</label> <input type="text" name="contactname" value="">
+  <br><br>
+<label for="contactphone">CONTACT PHONE:</label> <input type="text" name="contactphone" value="">
+  <br><br>
+  <label for="address">ADDRESS: </label> <input type="text" name="address" value="">
+  <br><br>
+<label for="city">CITY:</label> <input type="text" name="city" value="">
+  <br><br><br>
+  <label for="state">STATE:</label> <input type="text" name="state" value="">
+  <br><br><br>
+<label for="zip">ZIP:</label>   <input type="text" name="zip" value="">
+  <br><br><br>
+  <label for="medicare#">MEDICARE CLAIM NUMBER:</label>   <input type="text" name="medicare#" value="">
+  <br><br><br><br><br><br>
+<br><br>
+<label for="DoB">DATE OF BIRTH:</label>   
+<div>
+        <input id="txtDate" type="text" name="name" />
+    </div>
+  <br>
+  <label for="ssn">SSN:</label>   <input type="text" name="ssn" value="">
+  <br><br>
+  <label for="physicianname">PHYSICIAN NAME:</label> <input type="text" name="physicianname" value="">
+  <br><br>
+<label for="physicianaddress1">PHYSICIAN ADDRESS 1:</label> <input type="text" name="physicianaddress1" value="">
+  <br><br>
+<label for="physicianaddress2">PHYSICIAN ADDRESS 2:</label> <input type="text" name="physicianaddress2" value="">
+  <br><br>
+<label for="admitdate">ADMIT DATE:</label>   
+<div>
+        <input id="txtDate" type="text" name="name" />
+    </div>
+  <br><br>
+<button class="button save" name="save" type="submit">SAVE CHANGES</button>
+</form> 
+<body>
+
+
+
+
+</body>
+</html>
